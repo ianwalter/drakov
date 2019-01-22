@@ -2,21 +2,6 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
 
-        jshint: {
-            options: {
-                jshintrc: true,
-                ignores: [
-                    'describe',
-                    'it'
-                ]
-            },
-            files: [
-                'lib/**/*.js',
-                'test/**/*.js',
-                'index.js'
-            ]
-        },
-
         simplemocha: {
             options: {
                 globals: ['should'],
@@ -38,10 +23,9 @@ module.exports = function (grunt) {
 
     // For this to work, you need to have run `npm install grunt-simple-mocha`
     grunt.loadNpmTasks('grunt-simple-mocha');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-blueprint-validator');
 
     grunt.task.registerTask('unit-test', ['simplemocha:unit']);
     grunt.task.registerTask('test', ['blueprint-validator', 'simplemocha:api', 'simplemocha:unit']);
-    grunt.task.registerTask('default', ['jshint', 'test']);
+    grunt.task.registerTask('default', ['test']);
 };
