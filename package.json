@@ -21,6 +21,7 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
+    "@ianwalter/merge": "^2.0.0",
     "async": "^2.1.4",
     "chokidar": "^2.0.4",
     "colors": "^1.1.0",

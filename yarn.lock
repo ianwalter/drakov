@@ -18,6 +18,11 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@ianwalter/merge@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-2.0.0.tgz#72b6f70cd73a6f18f42e5f60abaf835d7f127df1"
+  integrity sha512-/3ohEt2heX1y08baOv+1FUTYZRyTvl9XphTMA7F7Fx7jZCj01daKf1HId0g+6yZaJgpih3JnKZrakejL33i9TQ==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"

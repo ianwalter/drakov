@@ -4,7 +4,6 @@
   var content = require('../../lib/content')
   var stdoutHook = require('../lib/stdout-hook')
   var assert = require('assert')
-  var loadash = require('lodash')
 
   describe('Content', function () {
     before(function (done) {
@@ -94,7 +93,7 @@
           }
 
           var hook = stdoutHook.setup(function (string) {
-            assert.equal(loadash.includes(string, 'NOT_MATCHED'), false)
+            assert.equal(string.includes('NOT_MATCHED'), false)
           })
 
           content.matchesBody(httpReq, specReq)
@@ -144,7 +143,7 @@
           }
 
           var hook = stdoutHook.setup(function (string) {
-            assert.equal(loadash.includes(string, 'NOT_MATCHED'), false)
+            assert.equal(string.includes('NOT_MATCHED'), false)
           })
 
           content.matchesBody(httpReq, specReq)
@@ -196,7 +195,7 @@
           }
 
           var hook = stdoutHook.setup(function (string) {
-            assert.equal(loadash.includes(string, 'NOT_MATCHED'), true)
+            assert.equal(string.includes('NOT_MATCHED'), true)
           })
 
           content.matchesBody(httpReq, specReq)
@@ -223,7 +222,7 @@
 
         it('should log to console that schema is matched', function () {
           var hook = stdoutHook.setup(function (string) {
-            assert.equal(loadash.includes(string, 'NOT_MATCHED'), false)
+            assert.equal(string.includes('NOT_MATCHED'), false)
           })
 
           content.matchesSchema(httpReq, specReq)
@@ -250,7 +249,7 @@
 
         it('should log to console that schema is matched', function () {
           var hook = stdoutHook.setup(function (string) {
-            assert.equal(loadash.includes(string, 'NOT_MATCHED'), false)
+            assert.equal(string.includes('NOT_MATCHED'), false)
           })
 
           content.matchesSchema(httpReq, specReq)
@@ -277,7 +276,7 @@
 
         it('should log to console that schema is not matched', function () {
           var hook = stdoutHook.setup(function (string) {
-            assert.equal(loadash.includes(string, 'NOT_MATCHED'), true)
+            assert.equal(string.includes('NOT_MATCHED'), true)
           })
 
           content.matchesSchema(httpReq, specReq)
@@ -307,7 +306,7 @@
         it('should log to console that schema is matched', function () {
           var numberOfErrors = 0
           var hook = stdoutHook.setup(function (string) {
-            if (loadash.includes(string, 'NOT_MATCHED')) {
+            if (string.includes('NOT_MATCHED')) {
               numberOfErrors += 1
             }
           })
@@ -330,7 +329,7 @@
         it('should log to console that schema is matched', function () {
           var numberOfErrors = 0
           var hook = stdoutHook.setup(function (string) {
-            if (loadash.includes(string, 'NOT_MATCHED')) {
+            if (string.includes('NOT_MATCHED')) {
               numberOfErrors += 1
             }
           })
@@ -359,7 +358,7 @@
         it('should log to console that schema is matched', function () {
           var numberOfErrors = 0
           var hook = stdoutHook.setup(function (string) {
-            if (loadash.includes(string, 'NOT_MATCHED')) {
+            if (string.includes('NOT_MATCHED')) {
               numberOfErrors += 1
             }
           })
@@ -389,7 +388,7 @@
         it('should log to console that schema does not match', function () {
           var numberOfErrors = 0
           var hook = stdoutHook.setup(function (string) {
-            if (loadash.includes(string, 'NOT_MATCHED')) {
+            if (string.includes('NOT_MATCHED')) {
               numberOfErrors += 1
             }
           })
@@ -435,7 +434,7 @@
 
           it('should log to console that content type is matched', function () {
             var hook = stdoutHook.setup(function (string) {
-              assert.equal(loadash.includes(string, 'NOT_MATCHED'), false)
+              assert.equal(string.includes('NOT_MATCHED'), false)
             })
 
             content.matchesHeader(httpReq, specReq)
@@ -456,7 +455,7 @@
 
           it('should log to console that content type is matched', function () {
             var hook = stdoutHook.setup(function (string) {
-              assert.equal(loadash.includes(string, 'NOT_MATCHED'), false)
+              assert.equal(string.includes('NOT_MATCHED'), false)
             })
 
             content.matchesHeader(httpReq, specReq)
@@ -477,7 +476,7 @@
 
           it('should log to console that content type is not matched', function () {
             var hook = stdoutHook.setup(function (string) {
-              assert.equal(loadash.includes(string, 'NOT_MATCHED'), true)
+              assert.equal(string.includes('NOT_MATCHED'), true)
             })
 
             content.matchesHeader(httpReq, specReq)

@@ -1,5 +1,5 @@
 var drakov = require('../../lib/drakov')
-var _ = require('lodash')
+var merge = require('@ianwalter/merge')
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 
@@ -18,7 +18,7 @@ module.exports = {
         cb()
       }
     }
-    drakov.run(_.extend({}, drakovDefault, args), asyncCb)
+    drakov.run(merge({}, drakovDefault, args), asyncCb)
   },
   stop: function (cb) {
     drakov.stop(cb)
