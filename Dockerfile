@@ -10,8 +10,8 @@ COPY yarn.lock yarn.lock
 RUN yarn
 
 # Copy source files.
-COPY drakov drakov
-COPY index.js index.js
+COPY drakov .
+COPY index.js .
 COPY lib lib
 COPY views views
 
