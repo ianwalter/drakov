@@ -22,7 +22,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "async": "^2.1.4",
-    "chokidar": "^1.6.1",
+    "chokidar": "^2.0.4",
     "colors": "^1.1.0",
     "drafter.js": "^2.6.7",
     "express": "4.15.5",
