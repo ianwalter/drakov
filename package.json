@@ -1,30 +1,24 @@
 {
-  "name": "drakov",
-  "version": "1.0.4",
+  "name": "@ianwalter/drakov",
+  "version": "0.0.0",
   "description": "Mock server that implements the API Blueprint specification",
-  "main": "./index.js",
+  "main": "index.js",
   "bin": {
     "drakov": "drakov"
   },
   "scripts": {
     "test": "grunt"
   },
-  "homepage": "https://github.com/aconex/drakov",
-  "author": {
-    "name": "Yakov Khalinsky",
-    "email": "ykhalinsky@aconex.com"
-  },
+  "homepage": "https://github.com/ianwalter/drakov",
+  "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aconex/drakov.git"
+    "url": "https://github.com/ianwalter/drakov.git"
   },
   "bugs": {
-    "url": "https://github.com/aconex/drakov/issues"
+    "url": "https://github.com/ianwalter/drakov/issues"
   },
-  "engines": {
-    "node": ">= 0.12"
-  },
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "async": "^2.1.4",
     "chokidar": "^1.6.1",
