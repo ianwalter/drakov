@@ -24,7 +24,7 @@
     "async": "^2.1.4",
     "chokidar": "^1.6.1",
     "colors": "^1.1.0",
-    "drafter": "^1.2.0",
+    "drafter.js": "^2.6.7",
     "express": "4.15.5",
     "glob": "^7.1.1",
     "http-shutdown": "^1.2.0",

@@ -761,19 +761,10 @@ domutils@^1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
-drafter.js@^2.3.0-pre.0, drafter.js@^2.6.0:
+drafter.js@^2.3.0-pre.0, drafter.js@^2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/drafter.js/-/drafter.js-2.6.7.tgz#59c43a8586527340cb35bddc54180559faeef001"
   integrity sha1-WcQ6hYZSc0DLNb3cVBgFWfru8AE=
-
-drafter@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/drafter/-/drafter-1.2.0.tgz#f4d11e8dee1f27f9a40485b8740c44361e9cf859"
-  integrity sha1-9NEeje4fJ/mkBIW4dAxENh6c+Fk=
-  dependencies:
-    drafter.js "^2.6.0"
-  optionalDependencies:
-    protagonist "^1.6.0"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -2347,7 +2338,7 @@ mute-stream@0.0.7:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
   integrity sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
 
-nan@^2.6.2, nan@^2.9.2:
+nan@^2.9.2:
   version "2.12.1"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.12.1.tgz#7b1aa193e9aa86057e3c7bbd0ac448e770925552"
   integrity sha512-JY7V6lRkStKcKTvHO5NVSQRv+RV+FIL5pvDoLiAtSL9pKlC5x9PKQcZDsq7m4FO4d57mkhC6Z+QhAh3Jdk5JFw==
@@ -2794,13 +2785,6 @@ promise@~2.0:
   integrity sha1-RmSKqdYFr10ucMMCS/WUNtoCuA4=
   dependencies:
     is-promise "~1"
-
-protagonist@^1.6.0:
-  version "1.6.8"
-  resolved "https://registry.yarnpkg.com/protagonist/-/protagonist-1.6.8.tgz#16d5d6316f1b6d4e493ec9450639dbc35503be6e"
-  integrity sha1-FtXWMW8bbU5JPslFBjnbw1UDvm4=
-  dependencies:
-    nan "^2.6.2"
 
 proxy-addr@~1.1.5:
   version "1.1.5"
