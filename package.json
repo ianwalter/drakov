@@ -7,7 +7,7 @@
     "drakov": "drakov"
   },
   "scripts": {
-    "lint": "eslint index.js lib",
+    "lint": "eslint drakov index.js lib",
     "test": "grunt"
   },
   "homepage": "https://github.com/ianwalter/drakov",
