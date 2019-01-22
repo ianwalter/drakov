@@ -30,7 +30,7 @@
     "http-shutdown": "^1.2.0",
     "jade": "^1.11.0",
     "lodash": "^4.17.4",
-    "path-to-regexp": "^1.7.0",
+    "path-to-regexp": "^3.0.0",
     "qs": "^6.3.0",
     "tv4": "^1.1.9",
     "yargs": "^6.6.0"
