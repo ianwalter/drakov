@@ -18,10 +18,17 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@ianwalter/log@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/log/-/log-1.0.0.tgz#e48cf182052e94c07e71e71456009ab923aaea53"
-  integrity sha512-sL/st+USuyMqBgcxDZS86Y2JV9qs8oi34PiMZ6q58RbxYWB50G+gerz4nQX+7uwekqGCE41Mewup9aXFRgrBCQ==
+"@ianwalter/clone@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-2.0.1.tgz#c9f37e2d13e386d3a63e632e6a6199fd44d71bed"
+  integrity sha512-SiDz8Vh59ZzQk98HKxf54j5D/ER0hV8hPU78Lw5I5YzdJJUQK/pZGBQJO0bfJsNVmy8eAbjYR7N1IR0Mn1qsNg==
+
+"@ianwalter/log@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/log/-/log-2.0.0.tgz#3ed80b4a9e2b2529659bef9608f5a45113b0cb03"
+  integrity sha512-EM+WCSxospiphGCQ1dWQOxn/tBKJIJUyI1joRbZa7O9tCP8Zv/T0wsZ1N3w+7/bpf/5WLtoOBkqGIaIwdgOYJg==
+  dependencies:
+    "@ianwalter/clone" "^2.0.1"
 
 "@ianwalter/merge@^2.0.0":
   version "2.0.0"
@@ -479,7 +486,7 @@ chalk@^1.0.0, chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.4.1:
+chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -3163,7 +3170,7 @@ object.pick@^1.2.0, object.pick@^1.3.0:
   dependencies:
     isobject "^3.0.1"
 
-on-finished@~2.3.0:
+on-finished@^2.3.0, on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
   integrity sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=
@@ -3468,6 +3475,14 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
+
+pkg-conf@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/pkg-conf/-/pkg-conf-2.1.0.tgz#2126514ca6f2abfebd168596df18ba57867f0058"
+  integrity sha1-ISZRTKbyq/69FoWW3xi6V4Z/AFg=
+  dependencies:
+    find-up "^2.0.0"
+    load-json-file "^4.0.0"
 
 pkg-dir@^2.0.0:
   version "2.0.0"
@@ -3962,6 +3977,15 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
+
+signale@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/signale/-/signale-1.3.0.tgz#1b4917c2c7a8691550adca0ad1da750a662b4497"
+  integrity sha512-TyFhsQ9wZDYDfsPqWMyjCxsDoMwfpsT0130Mce7wDiVCSDdtWSg83dOqoj8aGpGCs3n1YPcam6sT1OFPuGT/OQ==
+  dependencies:
+    chalk "^2.3.2"
+    figures "^2.0.0"
+    pkg-conf "^2.1.0"
 
 slice-ansi@0.0.4:
   version "0.0.4"

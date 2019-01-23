@@ -26,7 +26,6 @@ describe('Multipart Requests', function () {
         .set('Content-type', 'application/json')
         .send()
         .expect(404)
-        .expect('Content-type', 'text/html; charset=utf-8')
         .end(helper.endCb(done))
     })
   })
