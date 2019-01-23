@@ -92,9 +92,9 @@ With glob expression and specified server port
 
 `drakov -f "../com/foo/contracts/*.md" -p 4007`
 
-When running drakov and binding to a public IP
+Running drakov privately (running on localhost only)
 
-`drakov -f "../com/foo/contracts/*.md" --public`
+`drakov -f "../com/foo/contracts/*.md" --private`
 
 ## Reload Drakov when loaded specification files change
 
@@ -114,12 +114,6 @@ When you run server for testing API on different port than your app it's handy t
 For this to work you need also to listen on every route for OPTIONS requests.
 
 `drakov -f "../com/foo/contracts/*.md" --autoOptions`
-
-## Run on Public Interface
-
-By default Drakov only binds to localhost, to run on all public IP interfaces use the --public switch.
-
-`drakov -f "../com/foo/contracts/*.md" --public`
 
 ## SSL Support
 

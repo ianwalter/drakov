@@ -18,4 +18,4 @@ COPY views views
 # Expose default port.
 EXPOSE 3000
 
-CMD ["./drakov", "--public", "-f", "'apib/*.apib'"]
+CMD ["./drakov", "-f", "'apib/*.apib'"]
