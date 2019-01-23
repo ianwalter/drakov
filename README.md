@@ -1,24 +1,26 @@
-# Drakov API Blueprint Mock Server
+# @ianwalter/drakov
+> Mock server that implements the [API Blueprint][apibUrl] specification
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Aconex/drakov?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![npm page][npmImage]][npmUrl]
 
-[![npm version](https://badge.fury.io/js/drakov.svg)](http://badge.fury.io/js/drakov) [![Build Status](https://travis-ci.org/Aconex/drakov.svg)](https://travis-ci.org/Aconex/drakov)
+## About
 
-![Drakov](drakov.png)
+This is a fork of [Aconex/drakov][drakovUrl] with the goal of being actively
+maintained and focusing on making debugging easier.
 
-Mock server that implements the [API Blueprint](http://apiblueprint.org/) specification:
+## Installation
 
+Local:
 
-## Community
+```console
+yarn add drakov
+```
 
-We have setup a google group to assist with the answering of questions any users of Drakov may have.
+Global:
 
-It can be found at [https://groups.google.com/forum/?hl=en#!forum/drakov-api-server](https://groups.google.com/forum/?hl=en#!forum/drakov-api-server)
-
-
-## Notes on the Node.js compatibility
-
-Since version 1.0.2, a version of the Drafter package is being used, which attempts to install the version with C bindings (faster), but falls back if compilation of this package fails to Drafter.js.
+```console
+yarn global add drakov
+```
 
 
 ## MSON Support via Attribute elements
@@ -33,10 +35,6 @@ Drakov provide some logging in the following situations:
  - When request's path does not match any documented endpoints
  - When request's headers does not match headers schema
  - When request's body does not match body schema (corresponding to request's content-type)
-
-### Debug Mode
-
-When flag `--debugMode` is set on Drakov's start up all mismatching requests will be dumped on logs. Also Drakov will send a detail payload within the 404 response.
 
 ## Installation instructions
 
@@ -249,18 +247,16 @@ If you have any ideas or questions you are welcome to post an issue.
 * All test specification files must end in `-test.js`
 * Always run `npm test` before you submit your build request
 
-## CHANGELOG
+## License
 
-A history of changes with a list of contributors can be found at https://github.com/Aconex/drakov/blob/master/CHANGELOG.md
+Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
 
-## MAINTAINERS
+&nbsp;
 
-Yakov Khalinsky <yakov@therocketsurgeon.com>
+Created by [Ian Walter](https://iankwalter.com)
 
-Marcelo Garcia de Oliveira <moliveira@aconex.com>
-
-## Drakov Logo
-
-*Huge thanks to Eva Mansk for the funky logo!*
-
-You are welcome to use the Drakov logo as long it is to refer to this project and you provide acknowledgement and a link back to our project.
+[apibUrl]: http://apiblueprint.org/
+[drakovUrl]: https://github.com/Aconex/drakov
+[npmImage]: https://img.shields.io/npm/v/@ianwalter/drakov.svg
+[npmUrl]: https://www.npmjs.com/package/@ianwalter/drakov
+[licenseUrl]: https://github.com/ianwalter/drakov/blob/master/LICENSE
