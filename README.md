@@ -130,12 +130,6 @@ Once SSL is enabled Drakov will only respond to HTTPS requests.
 
 `drakov -f "../com/foo/contracts/*.md" --sslKeyFile="./ssl/server.key" --sslCrtFile="./ssl/server.crt"`
 
-## Stealth Mode
-
-In some cases you may wish to suppress the logging output of Drakov. To do so, run is with the `--stealthmode` options.
-
-`drakov -f "../com/foo/contracts/*.md" --stealthmode`
-
 ## Response Delay
 
 In some case you may want to force Drakov to delay sending a response. To do this simple use the `--delay` argument followed by a number (ms).
@@ -173,7 +167,6 @@ In cases where strict HTTP headers matching against API blueprints is not necess
     var argv = {
         sourceFiles: 'path/to/files/**.md',
         serverPort: 3000,
-        stealthmode: true,
         disableCORS: true,
         sslKeyFile: '/path/to/ssl/key.key',
         sslCrtFile: '/path/to/ssl/cert.crt',
@@ -198,7 +191,6 @@ Due to protagonist parsing being async, we need to setup the middleware with an 
     var argv = {
         sourceFiles: 'path/to/files/**.md',
         serverPort: 3000,
-        stealthmode: true,
         disableCORS: true,
         sslKeyFile: '/path/to/ssl/key.key',
         sslCrtFile: '/path/to/ssl/cert.crt',
@@ -225,11 +217,6 @@ Due to protagonist parsing being async, we need to setup the middleware with an 
 **Q:** If I have multiple responses on a single request, which response will I get?
 
 **A:** Drakov will respond with the first response.
-
-
-**Q:** Drakov is too loud (outputting too much logging), can I turn off request and API responses?
-
-**A:** You can suppress all but the startup output of Drakov with `--stealthmode`.
 
 
 ## CONTRIBUTING

@@ -8,7 +8,7 @@
   describe('Content', function () {
     before(function (done) {
       var helper = require('../lib/drakov-runner')
-      helper.run({ stealthmode: false }, function () {
+      helper.run({}, function () {
         helper.stop(done)
       })
     })
