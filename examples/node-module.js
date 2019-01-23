@@ -1,22 +1,24 @@
-var drakov = require('../index.js');
+const drakov = require('../index.js')
 // you would use the following line for require Drakov properly in your own app
-// var drakov = require('drakov');
+// const drakov = require('drakov')
 
-var drakovOptions  = {
-    sourceFiles: '../test/example/**/*.md',
-    serverPort: 3000
-};
+const drakovOptions = {
+  sourceFiles: '../test/example/**/*.md',
+  serverPort: 3000
+}
 
+drakov.run(drakovOptions, function (err) {
+  console.log('-- STARTED --')
 
-drakov.run(drakovOptions, function(err){
+  if (err) {
+    throw err
+  }
+
+  drakov.stop(function (err) {
+    console.log('-- STOPPED --')
+
     if (err) {
-        throw err;
-        console.log('-- STARTED --');
+      throw err
     }
-    drakov.stop(function(err) {
-        if (err) {
-            throw err;
-        }
-        console.log('-- STOPPED --');
-    });
-});
+  })
+})
