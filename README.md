@@ -1,7 +1,7 @@
 # Drakov API Blueprint Mock Server
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Aconex/drakov?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-    
+
 [![npm version](https://badge.fury.io/js/drakov.svg)](http://badge.fury.io/js/drakov) [![Build Status](https://travis-ci.org/Aconex/drakov.svg)](https://travis-ci.org/Aconex/drakov)
 
 ![Drakov](drakov.png)
@@ -45,13 +45,12 @@ When flag `--debugMode` is set on Drakov's start up all mismatching requests wil
 
 ## Running
 
-`drakov -f <glob expression to your md files> -s <comma delimited list of static file paths> -p <server port>`
+`drakov -f <glob expression to your md files> -p <server port>`
 
 
 **Argument Notes:**
 
 - Glob expression is required
-- If a list of static file paths are provided, then Drakov will proxy the static files
 - Server port is optional and defaults to **3000**
 - CORS headers are sent by default, you need to use the --disableCORS switch/property
 
@@ -90,22 +89,6 @@ Enables the `/drakov` endpoint, which lists all the available endpoints currentl
 With only a glob expression
 
 `drakov -f "../com/foo/contracts/*.md"`
-
-With glob expression and single static path
-
-`drakov -f "../com/foo/contracts/*.md" -s "../path/to/static/files"`
-
-With glob expression and multiple static paths (must be comma delimited with no spaces)
-
-`drakov -f "../com/foo/contracts/*.md" -s "../path/to/static/files" -s "../second/path/to/static/files"`
-
-With glob expression and static path that has a specific mount point
-
-`drakov -f "../com/foo/contracts/*.md" -s "../path/to/static/files=/www/path"`
-
-With glob expression and static path that has a specific mount point with different path mount delimiter
-
-`drakov -f "../com/foo/contracts/*.md" -s "../path/to/static/files:/www/path" -d ":"`
 
 With glob expression and specified server port
 
@@ -190,11 +173,6 @@ In cases where strict HTTP headers matching against API blueprints is not necess
     var argv = {
         sourceFiles: 'path/to/files/**.md',
         serverPort: 3000,
-        staticPaths: [
-            '/path/to/static/files',
-            '/another/path/to/static/files',
-            '/path/to/more/files=/mount/it/here'
-        ],
         stealthmode: true,
         disableCORS: true,
         sslKeyFile: '/path/to/ssl/key.key',
@@ -220,11 +198,6 @@ Due to protagonist parsing being async, we need to setup the middleware with an 
     var argv = {
         sourceFiles: 'path/to/files/**.md',
         serverPort: 3000,
-        staticPaths: [
-            '/path/to/static/files',
-            '/another/path/to/static/files',
-            '/path/to/more/files=/mount/it/here'
-        ],
         stealthmode: true,
         disableCORS: true,
         sslKeyFile: '/path/to/ssl/key.key',
