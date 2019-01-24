@@ -6,14 +6,14 @@ Lists all the things from the API
 ## Things [/api/multiple]
 
 ### Retrieve from GET [GET]
-First GET example with header 
+First GET example with header
 
 + Request
 
     + Headers
 
             Custom-header: First
-        
+
 
 + Response 200 (application/json;charset=UTF-8)
 
@@ -26,7 +26,7 @@ First GET example with header
     + Headers
 
             Custom-header: Second
-        
+
 
 + Response 200 (application/json;charset=UTF-8)
 
@@ -42,13 +42,13 @@ First GET example with header
 
 + Response 400 (application/json;charset=UTF-8)
 Get examples with a specific status code (eg. 400)
-        
+
     + Body
 
             {"error": "Bad request"}
-            
+
 ### Put to the first example [PUT]
-            
+
 + Request (application/json)
 
     + Body
@@ -67,8 +67,8 @@ Get examples with a specific status code (eg. 400)
                     "id": {"type": "number"},
                     "title": {"type": "string" }
                 }
-            } 
-            
+            }
+
 + Response 201 (application/json)
 
 + Request (application/json)
@@ -96,7 +96,7 @@ Get examples with a specific status code (eg. 400)
 ### Post to the first example [POST]
 
 + Request (application/json)
-First POST example with body 
+First POST example with body
 
     + Body
 
@@ -112,7 +112,7 @@ First POST example with body
             }
 
 + Request (application/json)
-Second POST example with body 
+Second POST example with body
 
     + Body
 
@@ -127,7 +127,7 @@ Second POST example with body
                 "status": "ok"
             }
 
-+ Request 
++ Request
 Second POST example with body
 
     + Headers
@@ -137,7 +137,7 @@ Second POST example with body
     + Body
 
             first=non-json
-        
+
 + Response 200 (application/json;charset=UTF-8)
 
     + Body

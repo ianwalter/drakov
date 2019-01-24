@@ -16,7 +16,7 @@ A Question object has the following attributes:
     + Body
 
             username=username&password=password
-                        
+
 + Response 200 (application/json)
 
             {"status":"ok"}

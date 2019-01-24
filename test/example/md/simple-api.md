@@ -82,7 +82,7 @@ Create a new thing
                 "text": "Hyperspeed jet",
                 "id": "1"
             }
-            
+
 ### Allow cross site origin [OPTIONS]
 
 + Response 200
