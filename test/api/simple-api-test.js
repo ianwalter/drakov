@@ -68,6 +68,15 @@ describe('Simple-API', function () {
           .expect({ text: 'Hyperspeed jet', id: '1' })
           .end(helper.endCb(done))
       })
+
+      it('should respond with 404 when request body does not match', done => {
+        request.post('/api/things/1111')
+          .set('Content-type', 'application/json')
+          .send({ text: 'Hyperspeed jet', id: 1 })
+          .expect(404)
+          .expect('Content-type', 'application/json; charset=utf-8')
+          .end(helper.endCb(done))
+      })
     })
   })
 

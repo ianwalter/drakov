@@ -95,8 +95,7 @@ Get examples with a specific status code (eg. 400)
 
 ### Post to the first example [POST]
 
-+ Request (application/json)
-First POST example with body
++ Request First POST example with body (application/json)
 
     + Body
 
@@ -111,8 +110,7 @@ First POST example with body
                 "status": "ok"
             }
 
-+ Request (application/json)
-Second POST example with body
++ Request Second POST example with body (application/json)
 
     + Body
 
@@ -127,8 +125,7 @@ Second POST example with body
                 "status": "ok"
             }
 
-+ Request
-Second POST example with body
++ Request Second POST example with body
 
     + Headers
 
@@ -147,8 +144,7 @@ Second POST example with body
                 "status": "ok"
             }
 
-+ Request
-Second POST example with body
++ Request Second POST example with body
 
     + Headers
 
