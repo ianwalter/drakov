@@ -30,7 +30,7 @@
     "chokidar": "^2.0.4",
     "drafter.js": "^2.6.7",
     "express": "4.16.4",
-    "glob": "^7.1.1",
+    "globby": "^9.0.0",
     "jade": "^1.11.0",
     "lodash": "^4.17.4",
     "on-finished": "^2.3.0",
