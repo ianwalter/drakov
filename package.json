@@ -21,8 +21,10 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
+    "@ianwalter/find-nested": "^2.0.2",
     "@ianwalter/log": "^2.0.0",
     "@ianwalter/merge": "^2.0.0",
+    "ajv": "^4.11.7",
     "async": "^2.1.4",
     "chalk": "^2.4.2",
     "chokidar": "^2.0.4",
