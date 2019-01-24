@@ -23,6 +23,13 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-2.0.1.tgz#c9f37e2d13e386d3a63e632e6a6199fd44d71bed"
   integrity sha512-SiDz8Vh59ZzQk98HKxf54j5D/ER0hV8hPU78Lw5I5YzdJJUQK/pZGBQJO0bfJsNVmy8eAbjYR7N1IR0Mn1qsNg==
 
+"@ianwalter/compare@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/compare/-/compare-1.0.0.tgz#b1bb8c49c4e9d337ef141ad363c172d9e69e0417"
+  integrity sha512-Xzh4Ltq8W5KJpH/UWOmeEofyb2OxpNkBnW8pANz1k2i9d5HjsCvV6MqjA19rq5y5DsHBZM3tJIEaoGoOYwExKA==
+  dependencies:
+    deep-diff "^1.0.2"
+
 "@ianwalter/find-nested@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@ianwalter/find-nested/-/find-nested-2.0.2.tgz#a8f1442ed3d0855beb89e331543390a9bb0a94b7"
@@ -911,6 +918,11 @@ decompress-response@^3.3.0:
   integrity sha1-gKTdMjdIOEv6JICDYirt7Jgq3/M=
   dependencies:
     mimic-response "^1.0.0"
+
+deep-diff@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/deep-diff/-/deep-diff-1.0.2.tgz#afd3d1f749115be965e89c63edc7abb1506b9c26"
+  integrity sha512-aWS3UIVH+NPGCD1kki+DCU9Dua032iSsO43LqQpcs4R3+dVv7tX0qBGjiVHJHjplsoUM2XRO/KB92glqc68awg==
 
 deep-extend@^0.6.0:
   version "0.6.0"

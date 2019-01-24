@@ -16,7 +16,6 @@ describe('UrlEncoded Requests', function () {
         request.post('/api/urlencoded')
           .set('Content-type', 'application/x-www-form-urlencoded')
           .send('random_number=4&static=not_random')
-
           .expect(200)
           .expect('Content-type', 'application/json;charset=UTF-8')
           .expect({ success: true })
@@ -24,8 +23,8 @@ describe('UrlEncoded Requests', function () {
       })
     })
 
-    describe('if http request body does not matches exactly with spec request body', function () {
-      it('should respond with 404 error response', function (done) {
+    describe('if http request body does not match exactly with spec request body', () => {
+      it('should respond with 404 error response', done => {
         request.post('/api/urlencoded')
           .set('Content-type', 'application/x-www-form-urlencoded')
           .send('random_number=555&static=magic')

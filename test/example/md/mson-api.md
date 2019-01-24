@@ -17,8 +17,7 @@ Lists all the things from the API
 
 ### Create a new thing [POST]
 
-+ Request (application/json)
-Create a new thing
++ Request Create a new thing (application/json)
 
     + Attributes (object)
         + text: Hyperspeed jet (string)
@@ -49,8 +48,7 @@ Create a new thing
 
 ### Update thing by it's id [POST]
 
-+ Request (application/json)
-Update the text of the thing
++ Request Update the text of the thing (application/json)
 
     + Attributes (array[Things])
 
