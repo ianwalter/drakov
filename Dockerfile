@@ -1,6 +1,6 @@
 FROM node:11-alpine
 
-RUN apk add inotify-tools
+RUN apk add inotify-tools tzdata
 
 # Create working directory.
 RUN mkdir -p /opt/drakov/apib
