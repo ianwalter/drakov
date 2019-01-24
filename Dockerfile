@@ -1,5 +1,7 @@
 FROM node:11-alpine
 
+RUN apk add inotify-tools
+
 # Create working directory.
 RUN mkdir -p /opt/drakov/apib
 WORKDIR /opt/drakov

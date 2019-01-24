@@ -13,13 +13,13 @@ FORMAT: 1A
             {
               "response": "ha"
             }
-            
+
 ### Create some stuff  [POST]
 
 + Response 200 (application/json;charset=UTF-8)
 
     + Body
-    
+
             {
               "response": "ha"
             }
