@@ -23,10 +23,10 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-2.0.1.tgz#c9f37e2d13e386d3a63e632e6a6199fd44d71bed"
   integrity sha512-SiDz8Vh59ZzQk98HKxf54j5D/ER0hV8hPU78Lw5I5YzdJJUQK/pZGBQJO0bfJsNVmy8eAbjYR7N1IR0Mn1qsNg==
 
-"@ianwalter/compare@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/compare/-/compare-1.0.0.tgz#b1bb8c49c4e9d337ef141ad363c172d9e69e0417"
-  integrity sha512-Xzh4Ltq8W5KJpH/UWOmeEofyb2OxpNkBnW8pANz1k2i9d5HjsCvV6MqjA19rq5y5DsHBZM3tJIEaoGoOYwExKA==
+"@ianwalter/compare@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/compare/-/compare-1.1.0.tgz#3c54e910c9e6aac027f7caaf72da9f8000611f85"
+  integrity sha512-1NzjQLQlKxomaNmwjkfaD52TUv0mtRuGrZjd45+4kW6M7NJfIB4IAhFyf8uycciYVatX/3IvaXZoxUISDn+Pww==
   dependencies:
     deep-diff "^1.0.2"
 
