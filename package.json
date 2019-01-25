@@ -27,6 +27,7 @@
     "@ianwalter/merge": "^2.0.0",
     "ajv": "^4.11.7",
     "async": "^2.1.4",
+    "ava": "^1.1.0",
     "chalk": "^2.4.2",
     "chokidar": "^2.0.4",
     "drafter.js": "^2.6.7",
