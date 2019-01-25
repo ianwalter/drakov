@@ -11,16 +11,6 @@ var schema = {
 }
 
 describe('Spec Schema', function () {
-  describe('hasSchema', function () {
-    it('Should return true when the spec object has a schema property', function () {
-      assert.equal(specSchema.hasSchema({ schema: {} }), true)
-    })
-
-    it('Should return false when the spec object has a schema property', function () {
-      assert.equal(specSchema.hasSchema({}), false)
-    })
-  })
-
   describe('matchWithSchema', function () {
     it('Should return true when json is validated against schema', () => {
       const { match } = specSchema.matchWithSchema(schema, { id: 1 })
