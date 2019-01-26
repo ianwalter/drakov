@@ -2,7 +2,7 @@
 
 ## Add a Note [POST]
 
-+ Request (application/json)
++ Request Add a Note (application/json)
 
     + Schema
 

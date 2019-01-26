@@ -21,8 +21,8 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
+    "@ianwalter/blueline": "file:../blueline",
     "@ianwalter/compare": "^1.1.0",
-    "@ianwalter/find-nested": "^2.0.2",
     "@ianwalter/log": "^2.0.0",
     "@ianwalter/merge": "^2.0.0",
     "ajv": "^4.11.7",
@@ -50,7 +50,7 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.3",
     "grunt-blueprint-validator": "^3.1.0",
     "grunt-cli": "^1.2.0",
     "grunt-simple-mocha": "^0.4.0",
