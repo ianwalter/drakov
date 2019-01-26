@@ -325,10 +325,12 @@
   dependencies:
     arrify "^1.0.1"
 
-"@ianwalter/blueline@file:../blueline":
-  version "2.0.0"
+"@ianwalter/blueline@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/blueline/-/blueline-2.0.1.tgz#6e98b20a38ae3851238bf5f2a521b04d8d474dc5"
+  integrity sha512-tVWf+i4PTIaeZTH0uEJ1E6b1EbjeTxAbLaAcPyajPHAcAE33HgRd9nNwuCoeFVN1lSpD7T5wdRGprsliN4jKSQ==
   dependencies:
-    "@ianwalter/find-nested" "^2.0.1"
+    "@ianwalter/find-nested" "^2.0.2"
     chalk "^2.4.2"
     drafter.js "^2.6.7"
     make-dir "^1.3.0"
@@ -346,7 +348,7 @@
   dependencies:
     deep-diff "^1.0.2"
 
-"@ianwalter/find-nested@^2.0.1":
+"@ianwalter/find-nested@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@ianwalter/find-nested/-/find-nested-2.0.2.tgz#a8f1442ed3d0855beb89e331543390a9bb0a94b7"
   integrity sha512-9FHha06IAvn3tsEWXc0dVXW+MEcwajTrT9sWgv7J2bWJfnpNRCLFtO3v7GEMnMqMX3ynf5yItwXiZqtVv3+onA==
@@ -788,7 +790,7 @@ bluebird@^3.5.3:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.3.tgz#7d01c6f9616c9a51ab0f8c549a79dfe6ec33efa7"
   integrity sha512-/qKPUQlaW1OyR51WeCPBvRnAlnZFUJkCSG5HzGnuIqhgyJtF+T94lFnn33eiazjRm2LAHVy2guNnaq48X9SJuw==
 
-body-parser@1.18.3, body-parser@^1.18.3:
+body-parser@1.18.3:
   version "1.18.3"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.18.3.tgz#5b292198ffdd553b3a0f20ded0592b956955c8b4"
   integrity sha1-WykhmP/dVTs6DyDe0FkrlWlVyLQ=

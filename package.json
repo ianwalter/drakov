@@ -21,7 +21,7 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
-    "@ianwalter/blueline": "file:../blueline",
+    "@ianwalter/blueline": "2.0.1",
     "@ianwalter/compare": "^1.1.0",
     "@ianwalter/log": "^2.0.0",
     "@ianwalter/merge": "^2.0.0",
