@@ -285,6 +285,13 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/helper-simple-access" "^7.1.0"
 
+"@babel/runtime@^7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.3.1.tgz#574b03e8e8a9898eaf4a872a92ea20b7846f6f2a"
+  integrity sha512-7jGW8ppV0ant637pIqAcFfQDDH1orEPGJb8aXfUozuCU3QqX7rX4DA8iwrbPrR1hcH0FTTHz47yQnk+bl5xHQA==
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@babel/template@^7.1.0", "@babel/template@^7.1.2", "@babel/template@^7.2.2":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.2.2.tgz#005b3fdf0ed96e88041330379e0da9a708eb2907"
@@ -361,9 +368,11 @@
     "@ianwalter/clone" "^2.0.1"
 
 "@ianwalter/merge@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-2.0.0.tgz#72b6f70cd73a6f18f42e5f60abaf835d7f127df1"
-  integrity sha512-/3ohEt2heX1y08baOv+1FUTYZRyTvl9XphTMA7F7Fx7jZCj01daKf1HId0g+6yZaJgpih3JnKZrakejL33i9TQ==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-2.0.1.tgz#80d87df43c0626896981e0793ff93a4b8db4e45b"
+  integrity sha512-EU5xWA1ABUBMwSXs3fQUYQpugfkBV/trr+SpN7mVh6dVyu+8dhl7Ma+KYPIbE7I8Xs5Hr9k9Ollz8juN0Hw59Q==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -4561,6 +4570,11 @@ regenerate@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
   integrity sha512-1G6jJVDWrt0rK99kBjvEtziZNCICAuvIPkSiUFIQxVP06RCVpq3dmDo2oi6ABpYaDYaTRr67BEhL8r1wgEZZKg==
+
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
+  integrity sha512-odxIc1/vDlo4iZcfXqRYFj0vpXFNoGdKMAUieAlFYO6m/nl5e9KR/beGf41z4a1FI+aQgtjhuaSlDxQ0hmkrHg==
 
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
