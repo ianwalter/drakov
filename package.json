@@ -8,7 +8,7 @@
   },
   "scripts": {
     "lint": "eslint drakov index.js lib examples",
-    "test:unit": "mocha test/unit/*-test.js",
+    "test:unit": "mocha -t 3000 test/unit/*-test.js",
     "test:api": "mocha -t 3000 test/api/*-test.js",
     "test": "grunt && npm run test:unit && npm run test:api"
   },
