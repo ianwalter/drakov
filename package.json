@@ -8,7 +8,9 @@
   },
   "scripts": {
     "lint": "eslint drakov index.js lib examples",
-    "test": "grunt"
+    "test:unit": "mocha test/unit/*-test.js",
+    "test:api": "mocha -t 3000 test/api/*-test.js",
+    "test": "grunt && npm run test:unit && npm run test:api"
   },
   "homepage": "https://github.com/ianwalter/drakov",
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
@@ -46,7 +48,6 @@
     "grunt": "^1.0.3",
     "grunt-blueprint-validator": "^3.1.0",
     "grunt-cli": "^1.2.0",
-    "grunt-simple-mocha": "^0.4.0",
     "np": "^4.0.1",
     "supertest": "^3.0.0"
   },
