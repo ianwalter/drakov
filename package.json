@@ -42,13 +42,7 @@
     "yargs": "^13.1.0"
   },
   "devDependencies": {
-    "eslint": "^5.12.1",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-html": "^5.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
+    "@ianwalter/eslint-config": "^1.0.0",
     "grunt": "^1.0.3",
     "grunt-blueprint-validator": "^3.1.0",
     "grunt-cli": "^1.2.0",
@@ -59,14 +53,7 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "eslint:recommended",
-      "standard"
-    ],
-    "env": {
-      "node": true
-    },
-    "rules": {
-      "no-console": 0
-    }
+      "@ianwalter/eslint-config"
+    ]
   }
 }
