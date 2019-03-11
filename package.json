@@ -50,7 +50,7 @@
     "grunt-cli": "^1.2.0",
     "mocha": "^6.0.2",
     "np": "^4.0.1",
-    "supertest": "^3.0.0"
+    "supertest": "^4.0.0"
   },
   "eslintConfig": {
     "root": true,
