@@ -388,11 +388,6 @@
     make-dir "^1.3.0"
     meow "^5.0.0"
 
-"@ianwalter/clone@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-2.0.1.tgz#c9f37e2d13e386d3a63e632e6a6199fd44d71bed"
-  integrity sha512-SiDz8Vh59ZzQk98HKxf54j5D/ER0hV8hPU78Lw5I5YzdJJUQK/pZGBQJO0bfJsNVmy8eAbjYR7N1IR0Mn1qsNg==
-
 "@ianwalter/compare@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@ianwalter/compare/-/compare-1.1.1.tgz#d1e1bfe10f6cf6347837b2bb7e7b8bb2e01ac1a7"
@@ -418,12 +413,10 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/find-nested/-/find-nested-2.0.3.tgz#18b9c3bb490ef4e9175b43c5a38616eab7f1e908"
   integrity sha512-AcZPqSkwsA1zfSXLBT04PT+P/XaAyds6v9lVq6LFk8R3gbfMk5c3MGIsmj6Jq6o3Vg4EKKsaZmR6Gpx93bn7SA==
 
-"@ianwalter/log@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/log/-/log-2.0.0.tgz#3ed80b4a9e2b2529659bef9608f5a45113b0cb03"
-  integrity sha512-EM+WCSxospiphGCQ1dWQOxn/tBKJIJUyI1joRbZa7O9tCP8Zv/T0wsZ1N3w+7/bpf/5WLtoOBkqGIaIwdgOYJg==
-  dependencies:
-    "@ianwalter/clone" "^2.0.1"
+"@ianwalter/log@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/log/-/log-3.0.0.tgz#c85f7343e28e98d0a4c872a42e6bdd6d8b302e8d"
+  integrity sha512-CAB1LaZUDUvQexuZYXmRhaFrpNqguIwA+ciB8+uvDm9dakNX3H+Yd7VIOisvx/y4GljH2hSrlTfCzhy14/0/YQ==
 
 "@ianwalter/merge@^2.0.0":
   version "2.0.1"
